@@ -1,0 +1,352 @@
+@import "../../Assets/scss/colors.scss";
+
+.house__type {
+    color: $cardBlue;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 10px !important;
+    padding: 3px 7px;
+    border: 1px solid $cardBlue;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.house__prices {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+    color: #6d7580;
+}
+.house__price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+    color: $cardBlue;
+}
+.house__address {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 !important;
+    margin: 0px 0px 18px 0px !important;
+    display: inline-block;
+    margin: 0;
+    color: #000;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.card__box-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__men {
+    font-size: 14px;
+    color: #6d7580;
+    margin-right: 10px;
+}
+
+.edit-btn {
+    display: flex;
+}
+
+.card__wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.failText {
+    padding: 10px 20px;
+    background-color: #ffacac;
+    color: #111;
+    font-weight: 500;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px !important;
+    min-width: 275px;
+    min-height: 300px;
+    border-radius: 8px !important;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+    &Controls {
+        border: 1px solid #ff000080 !important;
+    }
+    &Edit {
+        border-color: #0468ffaf !important;
+    }
+
+    &__header,
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__media{
+        position: relative;
+        height: 160px;
+    }
+    &__sold{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .markAsSold{
+        text-transform: capitalize !important;
+        background-color: #64748B;
+        top: -200px;
+        transition: .2s;
+        pointer-events: auto;
+    }
+    &:hover &__sold{
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 1;
+    }
+    &__verification{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px;
+        background-color: #ffdc01;
+        border-radius: 8px;
+        font-size: 12px;
+        user-select: none;
+    }
+    &:hover .markAsSold{
+        top: 0;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__main {
+        padding: 0 16px !important;
+    }
+
+    &__footer {
+        padding: 0 16px 0 !important;
+        p {
+            display: flex;
+            align-items: center;
+            font-weight: 400 !important;
+            font-size: 18px;
+            line-height: 22px;
+            color: #6d7580;
+        }
+    }
+
+    &__btn img {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__call,
+    &__msg {
+        background: radial-gradient(
+            100% 100% at 50.44% 100%,
+            #367bff 0%,
+            #6197ff 100%
+        );
+    }
+
+    &__call {
+        padding: 8px 16px !important;
+        border-radius: 5px !important;
+    }
+
+    &__msg {
+        margin: 0 !important;
+    }
+}
+.house__type__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+.house__type__name {
+    max-width: 80px;
+    margin: 0;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card__actions {
+    display: flex;
+}
+.scard {
+    margin-right: 30px;
+    min-width: 350px;
+    width: 390px;
+}
+.scard:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.fullCard {
+    width: 100%;
+    padding: 20px 20px 20px 30px;
+    display: flex;
+    box-shadow: none !important;
+    background-color: #f6f6f6 !important;
+    border-radius: 15px !important;
+    margin-bottom: 35px;
+
+    &__img {
+        max-height: 230px;
+        height: 230px;
+        max-width: 350px;
+        min-width: 300px;
+        border-radius: 10px;
+    }
+
+    .card__header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .card__header__items {
+        display: flex;
+        align-items: center;
+    }
+
+    .card__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card__title {
+        margin: 0 !important;
+        margin-right: 10px !important;
+    }
+
+    .house__prices {
+        min-width: auto !important;
+        margin-left: 10px;
+    }
+    .house__price {
+        font-size: 20px;
+    }
+    .card__desc {
+        height: auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 75%;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+
+    .card__btn {
+        margin-left: 10px !important;
+    }
+
+    &__foot {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .fullCard {
+        padding: 10px 15px;
+        .card__desc {
+            width: 100% !important;
+        }
+    }
+}
+@media (max-width: 715px) {
+    .fullCard {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 10px;
+        &__img {
+            max-width: 100%;
+            max-height: 300px;
+        }
+        .card__desc {
+            margin-bottom: 10px;
+        }
+        .card__header {
+            padding: 15px 16px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .adverts{
+        margin: 30px 0 !important;
+    }
+    .fullCard {
+        margin-bottom: 25px;
+        .house__price {
+            font-size: 18px;
+        }
+        .card__desc {
+            -webkit-line-clamp: 2 !important;
+        }
+        &__img {
+            max-height: 200px;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .fullCard {
+        &__img {
+            max-height: 175px;
+        }
+        .card__desc {
+            font-size: 14px;
+        }
+        .house__price {
+            font-size: 16px;
+        }
+        .card__header{
+            padding: 12px;
+        }
+        .card__main, .card__footer{
+            padding: 0 12px !important;
+        }
+    }
+}

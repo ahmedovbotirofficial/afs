@@ -1,0 +1,349 @@
+.user-profil-wer {
+    position: relative;
+    left: 0px;
+    border-right: 1px solid #cacaca;
+    background-color: #fff;
+    transition: ease 0.5s;
+}
+
+.user-prof {
+    // position: sticky;
+    // left: -100px;
+    height: 100%;
+    // position: relative;
+    transition: ease 0.5s;
+    background: #fff;
+
+    &__avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-bottom: 1px solid #cacaca;
+        width: 280px;
+        transition: ease 0.5s;
+
+        & img {
+            width: 80px;
+            height: 80px;
+            color: #a2cdff71;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 42px;
+        right: -25px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .user-prof__title {
+        white-space: nowrap;
+        opacity: 1;
+        transition: ease 0.5s;
+    }
+
+    &__close ion-icon {
+        padding: 4px;
+        font-size: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        transition: ease 0.5s;
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 20px 15px 0 0;
+        padding: 0;
+        list-style: none;
+        width: 280px;
+    }
+
+    &__item {
+        width: 100%;
+        transition: 0.3s;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover,
+        .active {
+            color: #fff !important;
+            background-color: #5cadff;
+        }
+    }
+
+    &__item+&__item {
+        margin-top: 15px;
+    }
+
+    &__link {
+        display: flex;
+        padding: 8px 0px 8px 5px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000;
+        border-radius: 8px;
+        transition: all .3s;
+    }
+
+    &__link p {
+        margin: 0;
+    }
+
+    &__link:hover p {
+        color: #fff;
+    }
+
+    &__link:hover ion-icon {
+        color: #fff;
+    }
+
+    &__ext {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    ion-icon {
+        margin-right: 10px;
+    }
+}
+
+.user-prof.close-b {
+    width: 80px;
+    // transition: ease 0.5s;
+}
+
+.user-prof.close-b .user-prof__avatar {
+    margin-top: 100px;
+    width: 70px;
+    // transition: ease 0.5s;
+}
+
+.user-prof.close-b .user-prof__avatar img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    // transition: ease 0.5s;
+}
+
+.user-prof.close-b .user-prof__title {
+    display: none;
+    transition: ease 0.5s;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.user-prof.close-b .user-prof__list {
+    width: 70px;
+    // transition: ease 0.5s;
+}
+
+.user-prof.close-b .user-prof__link {
+    display: flex;
+    justify-content: center;
+    // transition: ease 0.5s;
+    // width: 60px;
+}
+
+.user-prof.close-b .user-prof__link p {
+    // width: 60px;
+    // opacity: 0;
+    display: none;
+}
+
+.user-prof.close-b .user-prof__link ion-icon {
+    margin-left: 0px;
+    font-size: 35px;
+    // transition: ease 0.5s;
+}
+
+.user-prof.close-b .user-prof__link:hover ion-icon {
+    color: #fff;
+}
+
+.user-prof.close-b .user-prof__close ion-icon {
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .user-prof {
+        width: 80px;
+        // transition: ease 0.5s;
+    }
+
+    .user-prof__close {
+        display: none;
+    }
+    
+    .user-prof .user-prof__avatar {
+        margin-top: 100px;
+        width: 70px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__avatar img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__title {
+        display: none;
+        transition: ease 0.5s;
+        opacity: 0;
+        white-space: nowrap;
+    }
+    
+    .user-prof .user-prof__list {
+        width: 70px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__link {
+        display: flex;
+        justify-content: center;
+        // transition: ease 0.5s;
+        // width: 60px;
+    }
+    
+    .user-prof .user-prof__link p {
+        // width: 60px;
+        // opacity: 0;
+        display: none;
+    }
+    
+    .user-prof .user-prof__link ion-icon {
+        margin-left: 0px;
+        font-size: 35px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__link:hover ion-icon {
+        color: #fff;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+
+    .user-profil-wer {
+        padding-right: 10px;
+    }
+
+    .user-prof {
+        width: 55px;
+        // transition: ease 0.5s;
+    }
+
+    .user-prof__close {
+        display: none;
+    }
+    
+    .user-prof .user-prof__avatar {
+        margin-top: 100px;
+        width: 40px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__avatar img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .user-prof .user-prof__title {
+        display: none;
+        transition: ease 0.5s;
+        opacity: 0;
+        white-space: nowrap;
+    }
+    
+    .user-prof .user-prof__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-prof .user-prof__link ion-icon {
+        margin-left: 4px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .user-prof {
+        width: 45px;
+        // transition: ease 0.5s;
+    }
+
+    .user-prof__close {
+        display: none;
+    }
+    
+    .user-prof .user-prof__avatar {
+        margin-top: 100px;
+        width: 40px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__avatar img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .user-prof .user-prof__title {
+        display: none;
+        transition: ease 0.5s;
+        opacity: 0;
+        white-space: nowrap;
+    }
+    
+    .user-prof .user-prof__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40px;
+        // transition: ease 0.5s;
+    }
+    
+    .user-prof .user-prof__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-prof .user-prof__link ion-icon {
+        margin-left: 4px;
+        font-size: 30px;
+    }
+}

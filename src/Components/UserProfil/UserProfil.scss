@@ -1,0 +1,168 @@
+@import "../../Assets/scss/colors.scss";
+
+.user-profil-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    min-width: 320px !important;
+    min-height: 100vh;
+    height: 100%;
+    .personal {
+        .pic {
+            position: relative;
+            .profile {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .edit {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: absolute;
+                right: 5px;
+                bottom: 15px;
+                background-color: $lightBlue;
+                padding: 2px;
+                width: 30px;
+                height: 30px;
+                .editBtn {
+                    width: 20px;
+                    height: 20px;
+                    background: url("../../Assets/Img/Icon/edit.svg") no-repeat center center/cover;
+                }
+                .ppn {
+                    display: none;
+                }
+            }
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            p {
+                color: $darkgray;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 50px auto;
+        button {
+            cursor: pointer;
+            padding: 8px 32px;
+            background-color: $darkBlue;
+            color: $white;
+            border-radius: 8px;
+            border: 1px solid $darkBlue;
+            transition: all 0.3s;
+        }
+        button:hover,
+        button:active {
+            background-color: $white;
+            color: $darkBlue;
+        }
+        .inpG {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 30px;
+            margin-top: 30px;
+            #outlined-basic {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .user-profil-wrap {
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .user-profil-wrap {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .user-profil-wrap {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .user-profil-wrap {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .user-profil-wrap {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .container {
+        margin: 0;
+        .user-profil-wrap {
+            width: 300px;
+            .personal {
+                margin: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 0;
+        .user-profil-wrap {
+            width: 200px !important;
+            .personal {
+                margin: 10px;
+                .inpG{
+                    .us-input{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .container {
+        margin: 0;
+        .user-profil-wrap {
+            width: 200px !important;
+            .personal {
+                margin: 10px;
+                .inpG{
+                    .us-input{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 330px) {
+    .container {
+        margin: 0;
+        .user-profil-wrap {
+            width: 200px !important;
+            .personal {
+                margin: 10px;
+                .inpG{
+                    .us-input{
+                        width: 210px;
+                    }
+                }
+            }
+        }
+    }
+}

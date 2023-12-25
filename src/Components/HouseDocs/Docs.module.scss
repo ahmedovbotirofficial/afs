@@ -1,0 +1,22 @@
+@import "../../Assets/scss/colors.scss";
+.Group {
+    margin-bottom: 20px;
+    .label {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        color: $white;
+        padding: 8px 32px;
+        background-color: $darkBlue;
+        border-radius: 10px;
+    }
+    .label:hover,
+    .label:focus {
+        border: 2px solid $darkBlue;
+        background-color: $white;
+        color: $darkBlue;
+    }
+    .input {
+        display: none;
+    }
+}

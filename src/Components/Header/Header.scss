@@ -1,0 +1,171 @@
+@import "../../Assets/scss/colors.scss";
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.header {
+    padding: 5px 0px;
+    border-bottom: 1px solid #cacaca;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo-img {
+        width: 120px;
+        height: 40px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__location {
+        background-color: #f0f0f0 !important;
+        color: #292929 !important;
+        border-radius: 30px !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+
+        &-img {
+            margin-right: 5px;
+            width: 18px;
+        }
+    }
+
+    .header__menu-btn {
+        font-size: 30px;
+        border: none;
+        background-color: transparent ;
+    }    
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__buttons {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: auto;
+        height: auto;
+    }
+    &__likes__link{
+        display: flex;
+    }
+    .login__btn {
+        color: $darkBlue;
+        background-color: #E5F0FF !important;
+        white-space: nowrap;
+    }
+    .add__advert {
+        width: 100%;
+        max-width: 200px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    &__menu-btn {
+        display: none;
+    }
+    &__icons-nav{
+        display: flex;
+    }
+    &__select {
+        width: 120%;
+        height: 22px;
+        padding: 0px !important;
+        border: none !important;
+        border-radius: 50% !important;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        cursor: default;
+        padding: 0;
+        & .MuiSelect-select{
+            transform: translateX(-2px) scaleX(1.35);
+            width: 43px !important;
+            height: 43px !important;
+        }
+        & div{
+            padding: 0px;
+        }
+    }
+    
+    &__select-lang {
+        padding: 8px;
+        width: 27px;
+        height: 27px;
+        background-image: url("../../Assets/Img/Icon/global.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .select__currency{
+        width: 24px;
+        height: 24px;
+        background-image: url("../../Assets/Img/Icon/convert-icon.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
+
+    &__select fieldset {
+        border: none;
+    }
+    &__select svg {
+        display: none;
+    }
+    .MuiButtonBase-root .MuiIconButton-root {
+        padding: 0px !important;
+    }
+    .MuiAvatar-root{
+        text-transform: uppercase;
+    }
+};
+
+.userAccountMenu .MuiMenuItem-root{
+    padding: 0 !important;
+}
+.profile__menu__link{
+    color: #212121;
+    padding: 8px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__select-img {
+    margin-right: 10px !important;
+}
+
+.user-profil__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 985px) {
+    .header {
+        &__icons-nav, .add__advert {
+            display: none;
+        }
+        &__menu-btn {
+            display: flex;
+        }
+        &__buttons{
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header {
+        .header__location {
+            display: none;
+        }
+    }
+}

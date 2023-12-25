@@ -1,0 +1,194 @@
+.reyting-mod {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+
+    .reyting-mod__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+        width: 600px;
+        min-height: 400px;
+        background: #ffffff;
+        border-radius: 10px;
+        transition: all 1.5s;
+        .name{
+            padding: 0;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .reytin-mod__clos {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        top: 20px;
+        right: 20px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url("../../Assets/Img/close.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .reyting-mod__user-avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .reyting-mod__title {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+.reyting-mod--open {
+    display: flex;
+}
+
+.star_widget input {
+    display: none;
+}
+
+.rateus__text {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffc400;
+}
+
+.star_widget label {
+    font-size: 32px;
+    padding: 10px;
+    float: right;
+    color: #dee7ee;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+    transform: scale(1.1) rotate(0deg);
+
+    & svg {
+        fill: #ffc400;
+    }
+
+    .rateus__text {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffc400;
+    }
+
+    .star_widget label {
+        font-size: 32px;
+        padding: 10px;
+        float: right;
+        color: #dee7ee;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+        z-index: 3;
+        transform: rotate(90deg);
+    }
+
+    input:not(:checked)~label:hover,
+    input:not(:checked)~label:hover~label {
+        transform: scale(1.1) rotate(0deg);
+
+        & svg {
+            fill: #ffc400;
+        }
+    }
+
+    input:checked~label {
+        transform: scale(1.1) rotate(0deg);
+
+        & svg {
+            fill: #ffc400;
+        }
+    }
+
+    input#rate_5:checked~label {
+        transform: rotate(60deg);
+    }
+
+    #rate_1:checked~.rateus__form .rateus__text::before {
+        content: "I just hate it 😡";
+    }
+
+    #rate_2:checked~.rateus__form .rateus__text::before {
+        content: "I don't like it 😤";
+    }
+
+    #rate_3:checked~.rateus__form .rateus__text::before {
+        content: "It is Good enough 😀";
+    }
+
+    #rate_4:checked~.rateus__form .rateus__text::before {
+        content: "It is Awesome 😊";
+    }
+
+    #rate_5:checked~.rateus__form .rateus__text::before {
+        content: "I just like it 😍";
+    }
+
+    .star_widget form {
+        display: none;
+    }
+
+    input:checked~form {
+        display: block;
+    }
+}
+
+.reyting-mod__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reyting-mod__textarea {
+    width: 300px;
+    height: 150px;
+    padding: 12px 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.reyting-mod__btn {
+    padding: 8px 30px !important;
+}

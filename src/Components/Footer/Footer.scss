@@ -1,0 +1,215 @@
+.footer {
+    padding: 70px 0px 40px;
+    width: 100%;
+    // height: 390px;
+    background-image: url("../../Assets/Img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__holder {
+        width: 250px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        margin: 15px 0px;
+        width: 230px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #ffffff;
+    }
+
+    &__list-three {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__holder-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #347aff;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        width: 250px;
+        padding-top: 15px;
+        transition: all 0.3s;
+    }
+
+    &__item:hover {
+        transform: translateX(10px);
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    &__link:nth-child(7) {
+        color: #347aff;
+    }
+
+    &__link-tel {
+        position: relative;
+        padding-left: 30px;
+    }
+
+    &__link-tel::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../Assets/Img/Icon/call.svg");
+        background-repeat: no-repeat;
+    }
+
+    &__link-email {
+        position: relative;
+        padding-left: 33px;
+    }
+
+    &__link-email::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../Assets/Img/Icon/sms.svg");
+        background-repeat: no-repeat;
+    }
+
+    &__link-address {
+        position: relative;
+        padding-left: 33px;
+        width: 100px;
+    }
+
+    &__link-address::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../Assets/Img/Icon/location.svg");
+        background-repeat: no-repeat;
+    }
+
+    &__item-th+&__item-th {
+        margin-left: 15px;
+    }
+
+    &__link-th::hover {
+        color: #347aff;
+    }
+
+    .instagram {
+        color: #347aff;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    p + p {
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+
+        &__holder {
+            margin: 0px 0px 0px;
+            margin-left: 0px;
+
+        }
+
+        &__holder+&__holder {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer {
+        .footer__row {
+            align-items: flex-start;
+        }
+
+        &__holder-title {
+            font-size: 20px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 531px) {
+    .footer {
+        padding: 30px 0px;
+        background-image: url("../../Assets/Img/Footer.jpg");
+
+        &__row {
+            justify-content: center;
+        }
+
+        &__holder {
+            text-align: center;
+        }
+
+        &__holder-title {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        &__item:hover{
+            transform: none;
+        }
+
+        p.footer__subtitle {
+            width: 250px;
+            margin-bottom: 30px;
+        }
+
+        &__list-three{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+}

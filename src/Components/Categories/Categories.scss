@@ -1,0 +1,70 @@
+@import "../../Assets/scss/colors.scss";
+
+.categories {
+    margin-top: 40px;
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+        width: 140px;
+        height: 140px;
+        border-radius: 15px;
+        color: #000;
+        border: 1px solid #EBEEF2;
+        background-color: #fff;
+        transition: 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,.12);
+        cursor: pointer;
+        &:nth-child(3){
+            transform: scale(1.15);
+        }
+        &:hover{
+            top: -5px;
+        }
+        @media (max-width: 880px) {
+            &:nth-child(3){
+                transform: scale(1);
+            }
+        }
+    }
+
+    &__img-icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        box-shadow: rgba(50, 50, 93, 0.100) 0px 6px 12px -2px, rgba(0, 0, 0, 0.100) 0px 3px 7px -3px;
+    }
+
+    .categories__items-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .categories {
+        &__items {
+            width: 125px;
+            height: 125px;
+            margin: 0px;
+        }
+        &__img-icon {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

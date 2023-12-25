@@ -1,0 +1,350 @@
+@import "../../Assets/scss/colors.scss";
+p {
+    padding: 0;
+    margin: 0;
+}
+.loadingSpinner {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorBlog {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.advert {
+    margin-top: 50px;
+    &__content {
+        width: 70%;
+        margin-right: 20px;
+        padding: 20px 15px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    &__blog {
+        display: flex;
+    }
+    &__main__img {
+        border-radius: 10px;
+        overflow: hidden;
+        & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__about__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: #333;
+        margin-right: 20px;
+        &__content {
+            line-height: 24px;
+            font-weight: 700;
+            font-size: 26px;
+            margin: 0;
+        }
+    }
+    .house__type__icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__houseType {
+        display: flex;
+        align-items: center;
+        color: $cardBlue;
+        font-weight: 500 !important;
+        font-size: 13px !important;
+        line-height: 10px !important;
+        padding: 4px 8px;
+        border: 1px solid $cardBlue;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 15px;
+        word-wrap: none;
+        height: max-content;
+        & p {
+            margin: 0;
+            line-height: 15px;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+        }
+    }
+    &__address__blog {
+        display: flex;
+        align-items: center;
+    }
+    &__address {
+        display: flex;
+        align-items: center;
+        color: #222;
+        margin: 0;
+        margin-right: 10px;
+        line-height: 22px;
+        &__arrow {
+            padding-left: 5px;
+        }
+    }
+    &__description {
+        padding: 30px 0;
+    }
+    &__items {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        background-color: hsla(220, 100%, 60%, 0.12) !important;
+    }
+    #advertMap {
+        height: 600px;
+    }
+    &Price {
+        margin: 0;
+        color: $cardBlue;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-bottom: 2px;
+    }
+    &__view {
+        display: flex;
+        align-items: center;
+        &__count {
+            padding-left: 5px;
+        }
+    }
+    .descr__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .descr__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #757c8f;
+    }
+    &__panel {
+        width: 30%;
+    }
+    .sellerProfile {
+        position: sticky;
+        top: 15px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        &__header {
+            margin-top: 20px;
+        }
+        &__img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        &__header {
+            display: flex;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title {
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            margin: 0;
+            color: #000;
+        }
+        &__type {
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #6499ff;
+        }
+        &__actions {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a {
+                margin-top: 10px;
+            }
+            @media (max-width: 1110px) {
+                justify-content: center;
+            }
+        }
+        &__msg {
+            margin: 0;
+        }
+        &__btn img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .more {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px 20px;
+        position: sticky;
+        top: 240px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+        .areas {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .advert {
+        &__title {
+            flex-wrap: wrap;
+        }
+        &__houseType {
+            margin: 15px 0 5px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .advert {
+        &__blog {
+            flex-direction: column;
+        }
+        &__content {
+            width: 100%;
+            margin: 0;
+        }
+        &__panel {
+            width: 100%;
+        }
+        .sellerProfile__header {
+            justify-content: center;
+        }
+        #advertMap {
+            height: 440px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .advert {
+        margin-top: 25px;
+        &__about__header {
+            flex-direction: column-reverse;
+        }
+        .advertPrice {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        #advertMap {
+            height: 400px;
+        }
+        &__title__content {
+            font-size: 22px;
+            line-height: 26pz;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .advert {
+        &__title__content {
+            font-size: 20px;
+        }
+        .advertPrice {
+            font-size: 24px;
+        }
+        .advertGallery {
+            margin-top: 20px;
+        }
+        .advert__main__image .splide__slide {
+            height: 330px !important;
+        }
+        .advertGallery .splide__main__img {
+            max-height: 330px;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .advert {
+        margin-top: 20px;
+        &__address__blog {
+            font-size: 14px;
+        }
+        .advert__main__image .splide__slide {
+            height: 300px !important;
+        }
+        .advertGallery .splide__main__img {
+            max-height: 300px;
+        }
+    }
+}
+
+@media print {
+    #advertMap,
+    header,
+    footer,
+    .modal,
+    .errorBlog {
+        display: none !important;
+    }
+    .advert__houseType {
+        margin-bottom: 15px !important;
+        margin-left: 15px !important;
+    }
+    #__replain_widget_iframe,
+    #__replain_widget {
+        display: none !important;
+    }
+    .advert__content {
+        box-shadow: none !important;
+    }
+}

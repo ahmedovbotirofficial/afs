@@ -1,0 +1,398 @@
+.reltorcob {
+    position: relative;
+    // width: 1300px;
+    // margin: 0 auto;
+    &__btn-all {
+        position: relative;
+        // left: 0%;
+        top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #357aff;
+    }
+
+    &__btn-all::after {
+        position: absolute;
+        top: 1px;
+        right: -25px;
+        content: "";
+        width: 23px;
+        height: 23px;
+        background-image: url("../../Assets/Img/arrow-right.svg");
+        background-repeat: no-repeat;
+        transition: 0.5s ease;
+    }
+
+    &__btn-all:hover::after {
+        right: -30px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+
+    &__avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 400px;
+        margin-bottom: 20px;
+    }
+
+    &__title-name {
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    &__reyting-box {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__reytin {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // width: 100%;
+        margin-left: 40px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__reyting-title {
+        padding-top: 7px;
+        margin: 0;
+        margin-right: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    &__work-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 20px 10px 20px;
+        margin-bottom: 25px;
+        width: 270px;
+        height: 50px;
+        background: #eaf5ff;
+        border-radius: 5px;
+    }
+
+    &__work-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+
+    &__work-taj {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__work-taj::before {
+        position: absolute;
+        top: -15px;
+        content: "Ish tajribasi";
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #757c8f;
+    }
+
+    &__work-afeme {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__work-afeme::before {
+        position: absolute;
+        top: -15px;
+        content: "Afemeda";
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #757c8f;
+    }
+
+    &__wrap {
+        margin-left: 100px;
+        max-width: 700px;
+    }
+
+    &__idesc-box {
+        margin-bottom: 25px;
+    }
+
+    &__idesc-title {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__idescrip {
+        margin: 0;
+        max-width: 400px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #aaaaaa;
+    }
+
+    &__location-title {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__location-region {
+        position: relative;
+        margin-bottom: 25px;
+        padding-left: 23px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #aaaaaa;
+    }
+
+    &__location-region::before {
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url("../../Assets/Img/Icon/locationrel.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__contact-title {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__cantact-tel {
+        display: inline-block;
+        position: relative;
+        margin-right: 30px;
+        padding-left: 27px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &__cantact-tel::before {
+        position: absolute;
+        top: -3px;
+        left: 0px;
+        content: "";
+        width: 22px;
+        height: 22px;
+        background-image: url("../../Assets/Img/Icon/callicon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__cantact-email {
+        display: inline-block;
+        position: relative;
+        padding-left: 27px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &__cantact-email::before {
+        position: absolute;
+        left: 0px;
+        content: "";
+        width: 22px;
+        height: 22px;
+        background-image: url("../../Assets/Img/Icon/smsicon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__reyting-btn {
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .title{
+        font-weight: 500;
+        color:#357aff;
+    }
+    .comments {
+        width: 100%;
+        max-width: 1000px;
+        padding-left: 20px;
+        .comment_box {
+            display: flex;
+            flex-direction: column;
+            .first {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30px;
+                .reting {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 150px;
+                }
+                .author {
+                    min-width: 150px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.75);
+                }
+            }
+            .commit {
+                width: 85%;
+                color:rgb(100, 100, 100);
+            }
+        }
+    }
+}
+
+.realtor{
+    &__map{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+    &__profile{
+        display: flex;
+        align-items: center;
+    }
+    &__contact{
+        display: flex;
+        margin-top: 10px;
+    }
+}
+.realtor__container{
+    flex-grow: 1;
+}
+
+// =============== Tablet Responsiv =============== //
+
+@media only screen and (max-width: 1050px) {
+    .reltorcob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border-radius: 10px;
+            align-items: center;
+            margin-left: 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        }
+
+        &__reytin {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+        }
+
+        &__idescrip {
+            max-width: 900px;
+        }
+
+        &__work {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .reltorcob__avatar{
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .reltorcob {
+        &__avatar {
+            width: 120px;
+            height: 120px;
+        }
+
+        &__title-name {
+            font-size: 28px;
+        }
+
+        &__wrap {
+            padding: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .reltorcob {
+
+        &__box {
+            margin-top: 35px;
+        }
+        &__avatar {
+            width: 110px;
+            height: 110px;
+        }
+
+        &__title-name {
+            font-size: 20px;
+        }
+
+        &__wrap {
+            padding: 15px;
+        }
+
+        &__idescrip {
+            font-size: 12px;
+        }
+    }
+}
